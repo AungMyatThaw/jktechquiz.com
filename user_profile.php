@@ -11,9 +11,9 @@ if (isset($_GET['username'])) {
     // $stmt->execute([$username]);
     // $user = $stmt->fetch();
 
-    echo "Showing results for: " . htmlspecialchars($username);
-} else {
-    echo "No user selected.";
+//     echo "Showing results for: " . htmlspecialchars($username);
+// } else {
+//     echo "No user selected.";
 }
 
 
