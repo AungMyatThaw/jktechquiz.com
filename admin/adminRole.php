@@ -65,11 +65,11 @@ $totalPages = ceil($totalRows / $perPage);
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                        <th class="table_title text-center">No</th>
-                        <th class="table_title text-center">Username</th>
-                        <th class="table_title text-center">Email</th>
-                        <th class="table_title text-center">Role</th>
-                        <th class="table_title text-center">Action</th>
+                        <th class="admin_bg_color text-center">No</th>
+                        <th class="admin_bg_color text-center">Username</th>
+                        <th class="admin_bg_color text-center">Email</th>
+                        <th class="admin_bg_color text-center">Role</th>
+                        <th class="admin_bg_color text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -108,7 +108,7 @@ $totalPages = ceil($totalRows / $perPage);
                     </li>
                     <?php for ($i = 1; $i <= $totalPages; $i++): ?>
                         <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
-                            <a class="page-link" href="?page=<?= $i ?>"><?= $i ?></a>
+                            <a class="admin_bg_color page-link outline" href="?page=<?= $i ?>"><?= $i ?></a>
                         </li>
                     <?php endfor; ?>
                     <li class="page-item <?= ($page >= $totalPages) ? 'disabled' : '' ?>">

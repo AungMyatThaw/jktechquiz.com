@@ -126,14 +126,14 @@ $totalPages = ceil($totalRows / $perPage);
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                        <th class="table_title text-center"><input type="checkbox" id="selectAll"></th>
-                        <th class="table_title text-center">No</th>
-                        <th class="table_title text-center">No</th>
-                        <th class="table_title text-center">Username</th>
-                        <th class="table_title text-center">Email</th>
-                        <th class="table_title text-center">Last Login</th>
-                        <th class="table_title text-center">Last Active</th>
-                        <th class="table_title text-center">Expired Acc</th>
+                        <th class="admin_bg_color text-center"><input type="checkbox" id="selectAll"></th>
+                        <th class="admin_bg_color text-center">No</th>
+                        <th class="admin_bg_color text-center">No</th>
+                        <th class="admin_bg_color text-center">Username</th>
+                        <th class="admin_bg_color text-center">Email</th>
+                        <th class="admin_bg_color text-center">Last Login</th>
+                        <th class="admin_bg_color text-center">Last Active</th>
+                        <th class="admin_bg_color text-center">Expired Acc</th>
                         
                     </tr>
                 </thead>
@@ -253,6 +253,25 @@ $totalPages = ceil($totalRows / $perPage);
             </div>
         </div>
     </div>
+    <!-- Pagination -->
+            <nav>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
+                        <a class="page-link" href="?page=<?= $page - 1 ?>">Previous</a>
+                    </li>
+                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                        <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
+                            <a class="admin_bg_color page-link outline" href="?page=<?= $i ?>"><?= $i ?></a>
+                        </li>
+                    <?php endfor; ?>
+                    <li class="page-item <?= ($page >= $totalPages) ? 'disabled' : '' ?>">
+                        <a class="page-link" href="?page=<?= $page + 1 ?>">Next</a>
+                    </li>
+                </ul>
+            </nav>
+       
+    </div>
+</div>
     <script>
         function confirmDelete(userId) {
             document.getElementById("deleteUserId").value = userId;

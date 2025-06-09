@@ -1,8 +1,12 @@
-.table_title{
+.admin_bg_color{
     background-color: #48cae4 !important;
     color: white !important;
 }
 .admin_btn{
     background-color: #48cae4 !important;
     color: white !important;
+}
+.page-link.outline:focus {
+  outline: #48cae4 !important;
+  box-shadow: none !important;
 }
