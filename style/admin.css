@@ -6,7 +6,7 @@
     background-color: #48cae4 !important;
     color: white !important;
 }
-.page-link.outline:focus {
+.page-link.outline{
   outline: #48cae4 !important;
   box-shadow: none !important;
 }
