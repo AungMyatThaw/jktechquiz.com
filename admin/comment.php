@@ -30,6 +30,7 @@ $conn->close();
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="../style/admin.css">
 </head>
 
 <body>
@@ -60,7 +61,7 @@ $conn->close();
             </div>
             <div class="d-flex align-items-center">
                 <input type="date" id="deleteDate" class="form-control d-inline-block w-auto">
-                <button class="btn btn-warning ms-2" data-bs-toggle="modal" data-bs-target="#deleteByDateModal">Delete by Date</button>
+                <button class="btn admin_btn ms-2" data-bs-toggle="modal" data-bs-target="#deleteByDateModal">Delete by Date</button>
             </div>
         </div>
 
@@ -99,8 +100,8 @@ $conn->close();
                     <li class="page-item"><a class="page-link" href="?page=<?php echo $page - 1; ?>">&laquo;</a></li>
                 <?php endif; ?>
                 <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                    <li class="page-item <?php echo ($i == $page) ? 'active' : ''; ?>">
-                        <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                    <li class="page-item admin_btn<?php echo ($i == $page) ? 'active' : ''; ?>">
+                        <a class="page-link admin_btn" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
                     </li>
                 <?php endfor; ?>
                 <?php if ($page < $totalPages): ?>
