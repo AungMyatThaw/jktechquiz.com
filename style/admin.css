@@ -6,11 +6,13 @@
     background-color: #48cae4 !important;
     color: white !important;
 }
-.page-link.outline:focus {
-  outline: #48cae4 !important;
-  box-shadow: none !important;
-}
 .page-link.outline{
   outline: #48cae4 !important;
   box-shadow: none !important;
 }
+
+.page-link.outline{
+  outline: #48cae4 !important;
+  box-shadow: none !important;
+}
+=======

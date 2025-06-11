@@ -253,25 +253,21 @@ $totalPages = ceil($totalRows / $perPage);
             </div>
         </div>
     </div>
-    <!-- Pagination -->
-            <nav>
+    <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
                         <a class="page-link" href="?page=<?= $page - 1 ?>">Previous</a>
                     </li>
                     <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                        <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
-                            <a class="admin_bg_color page-link outline" href="?page=<?= $i ?>"><?= $i ?></a>
+                        <li class="page-item<?= ($i == $page) ? 'active' : '' ?>">
+                            <a class="page-link outline admin_btn" href="?page=<?= $i ?>"><?= $i ?></a>
                         </li>
                     <?php endfor; ?>
                     <li class="page-item <?= ($page >= $totalPages) ? 'disabled' : '' ?>">
                         <a class="page-link" href="?page=<?= $page + 1 ?>">Next</a>
                     </li>
                 </ul>
-            </nav>
-       
-    </div>
-</div>
+    </nav>
     <script>
         function confirmDelete(userId) {
             document.getElementById("deleteUserId").value = userId;
