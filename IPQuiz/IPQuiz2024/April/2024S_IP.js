@@ -32,7 +32,7 @@ const quizData = [
         image: "img/Q(6).png",
         options: ["a) 4", "b) 5", "c) 7", "d) 8"],
         answer: "b) 5"
-    },
+    },  
     {
         question: "There exist four (4) states numbered 1 through 4. The four (4) states are connected as shown in the figure below, and the state transition occurs in a clockwise or counter-clockwise direction. ",
         image: "img/Q(7).png",

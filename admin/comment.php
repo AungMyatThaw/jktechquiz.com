@@ -1,6 +1,10 @@
 <?php
 require("../config.php");
 
+require_once "admin_auth_check.php";
+$isLoggedIn = isset($_SESSION['id']);
+
+
 // Pagination
 $limit = 10;
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -31,12 +35,13 @@ $conn->close();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="../style/admin.css">
+    <link rel="stylesheet" href="../main.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.php"><img alt="logo" height="60" src="img/1-removebg-preview.png" /></a>
+            <a class="navbar-brand me-auto me-sm-auto nav-responsive " href="../index.php"><img alt="logo" width="50" src="img/1-removebg-preview.png" /></a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,7 +57,7 @@ $conn->close();
     </nav>
 
     <div class="container py-5">
-        <h2 class="text-center mb-5">Comments</h2>
+        <h2 class="text-center mb-5 mt-5" >Comments</h2>
 
         <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center mb-4 gap-2">
             <div>
@@ -71,9 +76,9 @@ $conn->close();
                     <?php $counter = $offset + 1; ?>
                     <?php foreach ($result as $value): ?>
                         <div class="card p-3 text-center shadow position-relative mb-5">
-                            <div class="form-check position-absolute start-0 top-0 m-2">
-                                <input class="form-check-input delete-checkbox" type="checkbox" value="<?php echo $value['id']; ?>">
-                            </div>
+                            <!-- <div class="form-check position-absolute start-0 top-0 m-2">
+                                <input class="form-check-input delete-checkbox admin_btn page-link" type="checkbox" value="<?php echo $value['id']; ?>">
+                            </div> -->
                             <div class="d-flex rounded-circle mx-auto align-items-center justify-content-center text-white fs-3 fw-bold bg-info border border-white border-4" style="width: 4rem; height:4rem; margin-top: -3rem;">
                                 <?php echo $counter++; ?>
                             </div>
@@ -101,7 +106,7 @@ $conn->close();
                 <?php endif; ?>
                 <?php for ($i = 1; $i <= $totalPages; $i++): ?>
                     <li class="page-item admin_btn<?php echo ($i == $page) ? 'active' : ''; ?>">
-                        <a class="page-link admin_btn" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                        <a class="page-link admin_btn active" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
                     </li>
                 <?php endfor; ?>
                 <?php if ($page < $totalPages): ?>

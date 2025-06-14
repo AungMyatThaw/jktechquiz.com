@@ -49,6 +49,7 @@ $result = $stmt->get_result(); // Get result
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/JQ.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/admin.css">
     <!-- Primary Meta Tags -->
     <title>JKTechQuiz</title>
     <link
@@ -141,11 +142,11 @@ $result = $stmt->get_result(); // Get result
 
             <div class="table-responsive mb-5 pb-5">
                 <table class="table mb-5 px-5 mx-auto text-center table-bordered border-dark table-hover" style="width: 43.75rem;">
-                    <thead class="table-dark">
+                    <thead>
                         <tr>
-                            <th scope="col">Quiz Type</th>
-                            <th scope="col">Score</th>
-                            <th scope="col">Exam Date</th>
+                            <th scope="col"  class="admin_bg_color">Quiz Type</th>
+                            <th scope="col"  class="admin_bg_color">Score</th>
+                            <th scope="col"  class="admin_bg_color">Exam Date</th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider">

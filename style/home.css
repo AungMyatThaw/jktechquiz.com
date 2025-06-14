@@ -320,6 +320,3 @@ body.loading .spinner {
         transform: rotate(405deg);
     }
 }
-.table_header{
-    background-color: #1f879c;
-}

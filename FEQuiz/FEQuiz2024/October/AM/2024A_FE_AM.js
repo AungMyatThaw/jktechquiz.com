@@ -48,9 +48,9 @@ const quizData = [
     {
         question: "Which of the following is the appropriate description of the “selection sort” algorithm?",
         options: ["a) An intermediate reference value is determined, and then the elements are divided into two groups of “larger” values and “smaller” values. This operation is recursivelyrepeated.",
-             "b) Each set of elements extracted at regular intervals is sorted, and then the interval is further decreased. The operation is repeatedly performed until the interval becomes 1.", 
-             "c) The element with the largest value is determined and swapped for the last element, and then the largest value of the unsorted elements is determined and swapped for the second-to-the-last element. This operation is repeated in the same way.", 
-             "d) Two adjacent elements are repeatedly compared and swapped if the first element is larger than the second. This operation is repeated until all elements are arranged in an orderly fashion."],
+            "b) Each set of elements extracted at regular intervals is sorted, and then the interval is further decreased. The operation is repeatedly performed until the interval becomes 1.",
+            "c) The element with the largest value is determined and swapped for the last element, and then the largest value of the unsorted elements is determined and swapped for the second-to-the-last element. This operation is repeated in the same way.",
+            "d) Two adjacent elements are repeatedly compared and swapped if the first element is larger than the second. This operation is repeated until all elements are arranged in an orderly fashion."],
         answer: "c) The element with the largest value is determined and swapped for the last element, and then the largest value of the unsorted elements is determined and swapped for the second-to-the-last element. This operation is repeated in the same way."
     },
     {
@@ -72,10 +72,10 @@ const quizData = [
     },
     {
         question: "Which of the following is a fail-safe concept for improving the security and reliability of the information system?",
-        options: ["a) Even when the user performs an incorrect operation, a problem does not occur in the system.", 
-  "b) Even when there is a partial system fault, the required functions of the overall system are maintained.",
-  "c) When a device configuring the system fails, damage can be minimized by enabling the system to stop safely.",
-  "d) When a system failure occurs, processing is continued by switching to a standby system."],
+        options: ["a) Even when the user performs an incorrect operation, a problem does not occur in the system.",
+            "b) Even when there is a partial system fault, the required functions of the overall system are maintained.",
+            "c) When a device configuring the system fails, damage can be minimized by enabling the system to stop safely.",
+            "d) When a system failure occurs, processing is continued by switching to a standby system."],
         answer: "c) When a device configuring the system fails, damage can be minimized by enabling the system to stop safely."
     },
     {
@@ -86,19 +86,19 @@ const quizData = [
     },
     {
         question: "There are minor and major page faults in an Operating System (OS). Which of the following is an appropriate action of the OS when a major page fault occurs?",
-        options: ["a) Asking the user to input the instruction corresponding to the page", 
-            "b) Looking for a page in CPU cache", 
-            "c) Looking for a page in virtual memory on the hard disk", 
+        options: ["a) Asking the user to input the instruction corresponding to the page",
+            "b) Looking for a page in CPU cache",
+            "c) Looking for a page in virtual memory on the hard disk",
             "d) Looking for the missed block corresponding to the page on the physical memory"],
         answer: "c) Looking for a page in virtual memory on the hard disk"
     },
     {
         question: "A real-time OS that performs preemptive priority scheduling for tasks A and B with A having a higher priority than B. Which of the following is the action that the OS takes?",
-        options: ["a) When A is launched during the execution of B, B is put into a ready state and A is executed.", 
-            "b) When A is launched during the execution of B, B is put into a waiting state and A is executed.", 
-            "c) When B is launched during the execution of A, A is put into a ready state and B is executed.", 
+        options: ["a) When A is launched during the execution of B, B is put into a ready state and A is executed.",
+            "b) When A is launched during the execution of B, B is put into a waiting state and A is executed.",
+            "c) When B is launched during the execution of A, A is put into a ready state and B is executed.",
             "d) When B is launched during the execution of A, A is put into a waiting state and B is executed."],
-        
+
         answer: "a) When A is launched during the execution of B, B is put into a ready state and A is executed."
     },
     {
@@ -137,7 +137,7 @@ const quizData = [
     },
     {
         question: "If a transaction processing program ends abnormally while updating the database, the database is recovered by a rollback process. In these circumstances, which of the following is the information that is used?",
-        
+
         options: ["a) Post-update information of log files", "b) Pre-update information of log files", "c) The latest backup file information", "d) The latest snapshot information"],
         answer: "b) Pre-update information of log files"
     },
@@ -148,14 +148,14 @@ const quizData = [
     },
     {
         question: "Which of the following is an appropriate description of a device that connects LANs?",
-        options: ["a) A bridge relays frames based on IP addresses.", 
-            "b) A gateway converts the protocols of only the first through third levels in the OSI basic reference model", 
-            "c) A repeater extends the transmission distance by amplifying signals between segments of the same type.", 
+        options: ["a) A bridge relays frames based on IP addresses.",
+            "b) A gateway converts the protocols of only the first through third levels in the OSI basic reference model",
+            "c) A repeater extends the transmission distance by amplifying signals between segments of the same type.",
             "d) A router relays frames based on MAC addresses"],
         answer: "c) A repeater extends the transmission distance by amplifying signals between segments of the same type."
     },
     {
-        question:" What is the broadcast address of the network 192.168.128.0/22?",
+        question: " What is the broadcast address of the network 192.168.128.0/22?",
         options: ["a) 192.168.128.127", "b) 192.168.128.255", "c) 192.168.131.255", "d) 192.168.255.255"],
         answer: "c) 192.168.131.255"
     },
@@ -172,9 +172,9 @@ const quizData = [
     {
         question: "Which of the following is an example of a phishing email?",
         options: ["a) An email containing pop-up ads for products unrelated to the email",
-             "b) An email intercepted, altered, and successfully sent", 
-             "c) An email with a link that automatically installs an application collecting and sending data to the remote server",
-              "d) An email with a link that redirects to a fake banking site"],
+            "b) An email intercepted, altered, and successfully sent",
+            "c) An email with a link that automatically installs an application collecting and sending data to the remote server",
+            "d) An email with a link that redirects to a fake banking site"],
         answer: "d) An email with a link that redirects to a fake banking site"
     },
     {
@@ -184,9 +184,9 @@ const quizData = [
     },
     {
         question: "Which of the following description is an appropriate use of asymmetric encryption to ensure the confidentiality of a message that a sender is going to send to a receiver?",
-        options: ["a) The message is encrypted using a pre-shared secret key", 
-            "b) The message is encrypted using a private key of the sender.", 
-            "c) The message is encrypted using a public key of the receiver.", 
+        options: ["a) The message is encrypted using a pre-shared secret key",
+            "b) The message is encrypted using a private key of the sender.",
+            "c) The message is encrypted using a public key of the receiver.",
             "d) The message is encrypted using a public key of the sender."],
         answer: "c) The message is encrypted using a public key of the receiver."
     },
@@ -207,15 +207,15 @@ const quizData = [
         answer: "b) Focusing on the case where there are users that use the same user ID and password on multiple websites, and attempting to log in using a list of user IDs and passwords fraudulently acquired from other websites"
     },
     {
-        question:" Which of the following is the name of an attack where manipulation is made to display a malicious website near the top of the results on a search website?",
+        question: " Which of the following is the name of an attack where manipulation is made to display a malicious website near the top of the results on a search website?",
         options: ["a) Cross-site scripting", "b) DNS cache poisoning)", "c) SEO poisoning", "d) Social engineering"],
         answer: "c) SEO poisoning"
     },
     {
         question: "Which of the following is a function of security information and event management (SIEM)?",
-        options: ["a) The centralized control of a range of communication devices in a network, and the changing of network configuration and security settings", 
-            "b) The execution of a file in an isolated virtual environment, and the monitoring of communication to a C&C server and other behavior", 
-            "c) The general analysis of logs that are collected from a range of devices, and the support of analysis and action by an administrator", 
+        options: ["a) The centralized control of a range of communication devices in a network, and the changing of network configuration and security settings",
+            "b) The execution of a file in an isolated virtual environment, and the monitoring of communication to a C&C server and other behavior",
+            "c) The general analysis of logs that are collected from a range of devices, and the support of analysis and action by an administrator",
             "d) The inspection of header information in packets, the identification of application programs that receive communication, and the control of communication"],
         answer: "c) The general analysis of logs that are collected from a range of devices, and the support of analysis and action by an administrator"
     },
@@ -226,197 +226,197 @@ const quizData = [
     },
     {
         question: "In object-oriented programming, which of the following is abstraction?",
-       
-        options: ["a) Concealing implementation details and exposing only a simplified interface for interacting with objects", 
+
+        options: ["a) Concealing implementation details and exposing only a simplified interface for interacting with objects",
             "b) Creating a subclass instance inheriting attributes and behaviors from its superclass",
-             "c) Defining multiple methods with the same name but different parameters", 
-             "d)Redefining in the child class a method that is already provided by the superclass with the same name and parameters but a different implementation"],
+            "c) Defining multiple methods with the same name but different parameters",
+            "d)Redefining in the child class a method that is already provided by the superclass with the same name and parameters but a different implementation"],
         answer: "a) Concealing implementation details and exposing only a simplified interface for interacting with objects"
     },
     {
         question: "Which of the following is an appropriate description of “delegation” in object orientation?",
-        options: ["a) A mechanism that creates one (1) new object using multiple objects as its parts", 
-            "b) A mechanism where a lower-level class inherits the attribute or operation of a higher-level class", 
-            "c) A mechanism where an application of an operation to a certain object automatically causes the application of that operation to related objects", 
+        options: ["a) A mechanism that creates one (1) new object using multiple objects as its parts",
+            "b) A mechanism where a lower-level class inherits the attribute or operation of a higher-level class",
+            "c) A mechanism where an application of an operation to a certain object automatically causes the application of that operation to related objects",
             "d) A mechanism where an operation to a certain object is internally requested to be performed by another object"],
         answer: "d) A mechanism where an operation to a certain object is internally requested to be performed by another object"
     },
     {
-        question: "In unit testing, which of the following activities is part of white box testing?",  
+        question: "In unit testing, which of the following activities is part of white box testing?",
         options: ["a) Boundary value analysis", "b) Condition testing", "c) Equivalence partitioning", "d) Orthogonal array testing"],
         answer: "b) Condition testing"
     },
     {
-        question: "Which of the following is the appropriate explanation of a stub or a driver used in a test?",  
+        question: "Which of the following is the appropriate explanation of a stub or a driver used in a test?",
         options: ["a) A driver is a module that is called from the module to be tested",
-             "b) A driver passes arguments and calls the module to be tested",
-              "c) A stub is a module used to call the module to be tested",
-               "d) A stub is used to display or print the values returned from the module to be tested"],
+            "b) A driver passes arguments and calls the module to be tested",
+            "c) A stub is a module used to call the module to be tested",
+            "d) A stub is used to display or print the values returned from the module to be tested"],
         answer: "b) A driver passes arguments and calls the module to be tested"
     },
     {
-        question: "Scrum is an agile development method. In Scrum, which of the following is an event where each member of the development team talks in turn about topics such as “things I did yesterday,” “things I will do today,” and “obstacles,” and all members share the status of a project?",  
+        question: "Scrum is an agile development method. In Scrum, which of the following is an event where each member of the development team talks in turn about topics such as “things I did yesterday,” “things I will do today,” and “obstacles,” and all members share the status of a project?",
         options: ["a) Daily Scrum", "b) Retrospective", "c) Sprint planning", "d) Sprint review"],
         answer: "a) Daily Scrum"
     },
     {
-        question: "Among eXtreme Programming (XP) practices, which of the following is adopted to improve program quality in program development through smooth communication between programmers by exchanging their roles and reviewing each other’s work?",  
+        question: "Among eXtreme Programming (XP) practices, which of the following is adopted to improve program quality in program development through smooth communication between programmers by exchanging their roles and reviewing each other’s work?",
         options: ["a) Coding standard", "b) Pair programming", "c) Planning game", "d) Test-driven development"],
         answer: "b) Pair programming"
     },
     {
-        question: "Which of the following is an appropriate purpose for using a Work Breakdown Structure (WBS) in a software development project?",  
-        
+        question: "Which of the following is an appropriate purpose for using a Work Breakdown Structure (WBS) in a software development project?",
+
         options: ["a) To clarify the sequence relation of activities and understand the critical path that should be intensively managed",
-             "b) To hierarchically detail activities and segment them into a manageable scale",
-              "c) To optimize the total cost when there is a trade-off between the duration and the cost of development",
-             "d) To represent the schedule of an activity with a horizontal bar, and clarify the start time and end time of the activity as well as the progress at the present point in time"],
+            "b) To hierarchically detail activities and segment them into a manageable scale",
+            "c) To optimize the total cost when there is a trade-off between the duration and the cost of development",
+            "d) To represent the schedule of an activity with a horizontal bar, and clarify the start time and end time of the activity as well as the progress at the present point in time"],
         answer: "b) To hierarchically detail activities and segment them into a manageable scale"
     },
     {
-        question: "Which of the following is an appropriate explanation concerning the scope creep in project scope management?",  
-       
-        options: ["a) A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables", 
-            "b) Any change to the project scope, which almost consistently requires an adjustment to the project cost or schedule", 
-            "c) The sum of the products, services, and results to be provided as a project", 
+        question: "Which of the following is an appropriate explanation concerning the scope creep in project scope management?",
+
+        options: ["a) A hierarchical decomposition of the total scope of work to be carried out by the project team to accomplish the project objectives and create the required deliverables",
+            "b) Any change to the project scope, which almost consistently requires an adjustment to the project cost or schedule",
+            "c) The sum of the products, services, and results to be provided as a project",
             "d) The uncontrolled expansion of product or project scope without adjustments to time, cost, and resources"],
         answer: "d) The uncontrolled expansion of product or project scope without adjustments to time, cost, and resources"
     },
     {
-        question: "Which of the following is a requirement for service level management?",  
-        options: ["a) A capacity plan is created, implemented, and maintained while human, technical, informational, and financial resources are considered.", 
-"b) A service catalog and SLA are created for the service to be provided, and they are agreed upon with the customer.", 
-"c) Costs are monitored and reported against the budget; the financial forecasts are reviewed, and costs are managed.", 
-"d) Risks to service continuity and availability of services are assessed and documented"],
+        question: "Which of the following is a requirement for service level management?",
+        options: ["a) A capacity plan is created, implemented, and maintained while human, technical, informational, and financial resources are considered.",
+            "b) A service catalog and SLA are created for the service to be provided, and they are agreed upon with the customer.",
+            "c) Costs are monitored and reported against the budget; the financial forecasts are reviewed, and costs are managed.",
+            "d) Risks to service continuity and availability of services are assessed and documented"],
         answer: "b) A service catalog and SLA are created for the service to be provided, and they are agreed upon with the customer."
     },
     {
-        question: "A device that operates 24 hours a day, 360 days a year has an MTBF value of 1,440 hours. Which of the following is the average number of failures for this device for 360 days? Here, the result is rounded to the closest whole number, and the MTTR of the device is ignored.",  
+        question: "A device that operates 24 hours a day, 360 days a year has an MTBF value of 1,440 hours. Which of the following is the average number of failures for this device for 360 days? Here, the result is rounded to the closest whole number, and the MTTR of the device is ignored.",
         options: ["a) 3",
-             "b) 6", 
-             "c) 9", 
-             "d)12"],
+            "b) 6",
+            "c) 9",
+            "d)12"],
         answer: "b) 6"
     },
     {
-        question: "Which of the following is the most appropriate description of a system auditor?",  
-        options: ["a) The entire audit interview must be conducted by one (1) system auditor, because discrepancies may occur in the record if multiple auditors are involved.", 
-            "b) The system auditor must instruct the department being audited to implement improvement measures for deficiencies identified during the audit interview.", 
-            "c) The system auditor must make an effort to obtain documents and records that support the information obtained from the department being audited during the audit interview.", 
+        question: "Which of the following is the most appropriate description of a system auditor?",
+        options: ["a) The entire audit interview must be conducted by one (1) system auditor, because discrepancies may occur in the record if multiple auditors are involved.",
+            "b) The system auditor must instruct the department being audited to implement improvement measures for deficiencies identified during the audit interview.",
+            "c) The system auditor must make an effort to obtain documents and records that support the information obtained from the department being audited during the audit interview.",
             "d) The system auditor must select audit interviewees from administrators who have been an auditor within the department being audited."],
         answer: "c) The system auditor must make an effort to obtain documents and records that support the information obtained from the department being audited during the audit interview."
     },
     {
-        question: "Which of the following is an explanation of an application architecture that constitutes enterprise architecture?",  
+        question: "Which of the following is an explanation of an application architecture that constitutes enterprise architecture?",
         options: ["a) It systematically describes the business processes or the information flows necessary for the business strategy.",
-             "b) It systematically describes the contents of the data necessary for business operations, the relations or structures between the data, etc.",
-              "c) It systematically describes the functions or system configurations that support business processes.",
-               "d) It systematically describes the technical components necessary for the developments and operations of the information systems."],
+            "b) It systematically describes the contents of the data necessary for business operations, the relations or structures between the data, etc.",
+            "c) It systematically describes the functions or system configurations that support business processes.",
+            "d) It systematically describes the technical components necessary for the developments and operations of the information systems."],
         answer: "c) It systematically describes the functions or system configurations that support business processes."
     },
     {
-        question: "Which of the following is a description of the SOA?",  
-        options: ["a) A concept of constructing a system by considering the software functions as components called services and combining them", 
-"b) A concept of improving sales efficiency and quality by using IT for sales activities to increase sales and profits as well as to improve customer satisfaction", 
-"c) A concept of re-designing the business processes to innovatively improve the cost, quality, service, and speed",
- "d) Outsourcing the in-house operations that are not part of the core businesses to concentrate the management resources on the core businesses"],
+        question: "Which of the following is a description of the SOA?",
+        options: ["a) A concept of constructing a system by considering the software functions as components called services and combining them",
+            "b) A concept of improving sales efficiency and quality by using IT for sales activities to increase sales and profits as well as to improve customer satisfaction",
+            "c) A concept of re-designing the business processes to innovatively improve the cost, quality, service, and speed",
+            "d) Outsourcing the in-house operations that are not part of the core businesses to concentrate the management resources on the core businesses"],
         answer: "a) A concept of constructing a system by considering the software functions as components called services and combining them"
     },
     {
-        question: "Which of the following is the work that is performed when non-functional requirements are defined?",  
-        options: ["a) Clarifying the flow of information (i.e., data) between the functions constituting business operations", 
-            "b) Clarifying the interface for exchanging information with other systems", 
-            "c) Creating the technical requirements for the development criteria and standards according to the programming language used in system development", 
+        question: "Which of the following is the work that is performed when non-functional requirements are defined?",
+        options: ["a) Clarifying the flow of information (i.e., data) between the functions constituting business operations",
+            "b) Clarifying the interface for exchanging information with other systems",
+            "c) Creating the technical requirements for the development criteria and standards according to the programming language used in system development",
             "d) Defining the scope to be implemented as system functions"],
         answer: "c) Creating the technical requirements for the development criteria and standards according to the programming language used in system development"
     },
     {
-        question: "Which of the following is an explanation of diversity management?",  
+        question: "Which of the following is an explanation of diversity management?",
         options: ["a) Both labor and management to reach an agreement on working conditions and work together with the aim of increasing profits",
-             "b) For employees to harmonize between work and private life, approach their work with a sense of purpose, and increase the vitality of the organization",
-              "c) For employees to take an autonomous approach to work with the aim of achieving the objectives that they set for themselves and be evaluated according to the degree of achievement", 
-              "d) To increase the vitality of the organization by respecting the diversity among its employees in terms of aspects such as gender, age, and nationality"],
+            "b) For employees to harmonize between work and private life, approach their work with a sense of purpose, and increase the vitality of the organization",
+            "c) For employees to take an autonomous approach to work with the aim of achieving the objectives that they set for themselves and be evaluated according to the degree of achievement",
+            "d) To increase the vitality of the organization by respecting the diversity among its employees in terms of aspects such as gender, age, and nationality"],
         answer: "d) To increase the vitality of the organization by respecting the diversity among its employees in terms of aspects such as gender, age, and nationality"
     },
     {
-        question: "In innovation theory, consumers are classified into five (5) groups innovators, early adopters, early majority, late majority, and laggards according to the timing of their purchase of a new product. Which of the following is the appropriate explanation of the early adopters?",  
+        question: "In innovation theory, consumers are classified into five (5) groups innovators, early adopters, early majority, late majority, and laggards according to the timing of their purchase of a new product. Which of the following is the appropriate explanation of the early adopters?",
         options: ["a) A group that accepts a new product, service, or other such offering at an early phase, has a large impact on consumers, is sensitive to trends, and makes decisions after collecting information themselves",
-             "b) A group that accepts a new product, service, or other such offering at the soonest phase without worrying about risks",
-              "c) A group that is skeptical about the adoption of a new product or new technology and only adopts it after seeing it being adopted by most people around them",
+            "b) A group that accepts a new product, service, or other such offering at the soonest phase without worrying about risks",
+            "c) A group that is skeptical about the adoption of a new product or new technology and only adopts it after seeing it being adopted by most people around them",
             "d) A group that is the most conservative, has limited interest in movements in society and tends to adopt new trends only after they become common or, in some cases, remains firm in refusing their adoption)"],
-              
+
         answer: "a) A group that accepts a new product, service, or other such offering at an early phase, has a large impact on consumers, is sensitive to trends, and makes decisions after collecting information themselves"
     },
     {
-        question: "Which of the following is a definition of Customer Relationship Management (CRM)?",  
-        options: ["a) A framework used to support and integrate processes, people, and information across an organization to provide a unified gateway for information and a knowledge base for employees, partners, and customers", 
-"b) A technology for managing all of a company’s relationships and interactions with customers and potential customers in order to improve business relationships",
- "c) A type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations",
-"d) The broad range of activities required to plan, control, and execute a product's flow, from acquiring raw materials and production through distribution to the final customer, in the most streamlined and cost-effective way possible"],
+        question: "Which of the following is a definition of Customer Relationship Management (CRM)?",
+        options: ["a) A framework used to support and integrate processes, people, and information across an organization to provide a unified gateway for information and a knowledge base for employees, partners, and customers",
+            "b) A technology for managing all of a company’s relationships and interactions with customers and potential customers in order to improve business relationships",
+            "c) A type of software that organizations use to manage day-to-day business activities such as accounting, procurement, project management, risk management and compliance, and supply chain operations",
+            "d) The broad range of activities required to plan, control, and execute a product's flow, from acquiring raw materials and production through distribution to the final customer, in the most streamlined and cost-effective way possible"],
         answer: "b) A technology for managing all of a company’s relationships and interactions with customers and potential customers in order to improve business relationships"
     },
     {
-        question: "Which of the following is an appropriate explanation of concurrent engineering?",  
+        question: "Which of the following is an appropriate explanation of concurrent engineering?",
         options: ["a) A product development technique that sequentially executes processes, such as design, manufacturing, and sales activities",
-             "b) A technique that analyzes a target system and clarifies its specifications",
-              "c) A technique that executes processes, such as design and production planning, in parallel with product development",
-               "d) A technique that grasps the optimal combination of functions and costs and improves value through systematic procedures."],
+            "b) A technique that analyzes a target system and clarifies its specifications",
+            "c) A technique that executes processes, such as design and production planning, in parallel with product development",
+            "d) A technique that grasps the optimal combination of functions and costs and improves value through systematic procedures."],
         answer: "c) A technique that executes processes, such as design and production planning, in parallel with product development"
     },
     {
-        question: "Which of the following is one of the main characteristics of a blockchain?",  
+        question: "Which of the following is one of the main characteristics of a blockchain?",
         options: ["a) A centralized ledger on a server", "b) A client-server network", "c) A distributed ledger on a peer-to-peer network", "d) A type of cryptocurrency"],
         answer: "c) A distributed ledger on a peer-to-peer network"
     },
     {
-        question: "Which of the following is the situation where an improvement can be expected by installing a Material Requirements Planning (MRP) system?",  
+        question: "Which of the following is the situation where an improvement can be expected by installing a Material Requirements Planning (MRP) system?",
         options: ["a) Drawing information is managed on both electronic files and hard copies, so the history of design changes cannot be accurately traced.",
-             "b) High-mix, low-volume production is adopted, so the cost of installing production equipment is increasing",
-              "c) Information about materials and quantities necessary for production is complicated, so a miscalculation of order quantity or an interruption of production often occurs.",
-               "d) There are too many design changes, so production efficiency does not improve."],
+            "b) High-mix, low-volume production is adopted, so the cost of installing production equipment is increasing",
+            "c) Information about materials and quantities necessary for production is complicated, so a miscalculation of order quantity or an interruption of production often occurs.",
+            "d) There are too many design changes, so production efficiency does not improve."],
         answer: "d) 33,000"
     },
     {
-        question: "Which of the following is the objects that can benefit from the cell production method?",  
+        question: "Which of the following is the objects that can benefit from the cell production method?",
         options: ["a) Products that require a wide variety and flexible production",
-             "b) Products that require division of labor by standardization, simplification, and specialization", 
-             "c) Products that require mass production to increase productivity",
-              "d) Products whose specifications do not change for a long period"],
+            "b) Products that require division of labor by standardization, simplification, and specialization",
+            "c) Products that require mass production to increase productivity",
+            "d) Products whose specifications do not change for a long period"],
         answer: "a) Products that require a wide variety and flexible production"
     },
     {
-        question: "Which of the following is a technique that can be used to discover useful information and relationships from large amounts of customer and market data retained by a company?",  
+        question: "Which of the following is a technique that can be used to discover useful information and relationships from large amounts of customer and market data retained by a company?",
         options: ["a) Data dictionary", "b) Data flow diagram", "c) Data mining", "d) Data warehouse"],
         answer: "c) Data mining"
     },
     {
-        question: "",  
+        question: "",
         image: "img/Q(57).png",
         options: ["a) ", "b) ", "c) ", "d) "],
         answer: "b) "
     },
     {
-        question: "",  
+        question: "",
         image: "img/Q(58).png",
         options: ["a) 50", "b) 60", "c) 70", "d) 80"],
         answer: "c) 70"
     },
-    {    
-        question: "When the selling price of a product is $50 and the fixed costs for production and sales are $100,000, which of the following is the number of units to be sold to achieve the desired profit of $50,000? Here, the variable cost ratio is 60%.",  
-        
+    {
+        question: "When the selling price of a product is $50 and the fixed costs for production and sales are $100,000, which of the following is the number of units to be sold to achieve the desired profit of $50,000? Here, the variable cost ratio is 60%.",
+
         options: ["a) 5,000", "b) 7,500", "c) 10,000", "d) 12,500"],
         answer: "b) 7,500"
     },
-    {    
-        question: "Which of the following is an explanation of a volume license agreement?",  
-        options: ["a) A contract that establishes standard license conditions and deems that a license agreement is automatically established between the rightsholder and the purchaser when a certain amount of package is unwrapped within the scope of the standard license conditions.", 
-            "b) A contract that predefines the number of installations and permits the use of software for companies or other such purchasers of large amounts of software", 
-            "c) A contract that restricts the location of use and permits the use of an unlimited number of units or persons within a specific facility", 
+    {
+        question: "Which of the following is an explanation of a volume license agreement?",
+        options: ["a) A contract that establishes standard license conditions and deems that a license agreement is automatically established between the rightsholder and the purchaser when a certain amount of package is unwrapped within the scope of the standard license conditions.",
+            "b) A contract that predefines the number of installations and permits the use of software for companies or other such purchasers of large amounts of software",
+            "c) A contract that restricts the location of use and permits the use of an unlimited number of units or persons within a specific facility",
             "d) A contract where use is permitted by selecting to agree to the terms of the contract on the screen that is displayed when software is downloaded from the Internet"],
         answer: "b) A contract that predefines the number of installations and permits the use of software for companies or other such purchasers of large amounts of software"
     },
 ];
-    
+
 
 const quizContainer = document.getElementById("quiz-container");
 const paginationContainer = document.getElementById("pagination");
@@ -435,10 +435,10 @@ let score = 0;
 const questionsPerPage = 6;
 let currentPage = 0;
 const maxVisiblePages = 8;
-const totalPages = Math.ceil(quizData.length / questionsPerPage); 
+const totalPages = Math.ceil(quizData.length / questionsPerPage);
 
 
-for (const i in quizData){
+for (const i in quizData) {
     if (userSelections[i] === undefined) {
         userSelections[i] = null; // Initialize unanswered questions
     }
@@ -454,13 +454,13 @@ function getURLParameter(name) {
 const enableRandomQuiz = getURLParameter("enableRandomQuiz") === "1";
 
 if (enableRandomQuiz) {
-   // Fisher-Yates Shuffle 
+    // Fisher-Yates Shuffle 
     for (let i = quizData.length - 1; i > 0; i--) {
-    const randomIndex = Math.floor(Math.random() * (i + 1)); // Generate a random index
-    // Swap the elements at i and randomIndex
-    [quizData[i], quizData[randomIndex]] = [quizData[randomIndex], quizData[i]];
+        const randomIndex = Math.floor(Math.random() * (i + 1)); // Generate a random index
+        // Swap the elements at i and randomIndex
+        [quizData[i], quizData[randomIndex]] = [quizData[randomIndex], quizData[i]];
+    }
 }
-} 
 
 // Function to render questions for the current page
 function renderQuestions(pageIndex) {
@@ -590,20 +590,20 @@ document.getElementById("pgi-leftBtn").onclick = (e) => {
     });
 };
 document.getElementById("pgi-nextBtn").onclick = (e) => {
-    e.preventDefault(); 
-    e.stopPropagation(); 
+    e.preventDefault();
+    e.stopPropagation();
 
     const startPage = Math.floor(currentPage / maxVisiblePages) * maxVisiblePages;
     const endPage = Math.min(startPage + maxVisiblePages, totalPages);
 
     if (endPage < totalPages) {
-        currentPage = endPage; 
+        currentPage = endPage;
         updatePaginationAndQuestions();
     }
 
     window.scrollTo({
-        top: document.documentElement.scrollHeight, 
-        behavior: "instant", 
+        top: document.documentElement.scrollHeight,
+        behavior: "instant",
     });
 };
 // Function to scroll to the top of the page
@@ -627,7 +627,7 @@ function updatePaginationAndQuestions() {
 }
 
 
- // Track the currently active question
+// Track the currently active question
 
 click.onclick = (e) => {
     const ua_num = document.getElementById("uq-num");
@@ -645,9 +645,8 @@ click.onclick = (e) => {
 
         const boxHTML = `
             <a style="display:contents" onclick="setActiveState(${i})">
-                <div class="border border-2 border-info rounded shadow d-flex align-items-center justify-content-center ${boxClass} question-link ${
-            isActive ? "active" : ""
-        }"
+                <div class="border border-2 border-info rounded shadow d-flex align-items-center justify-content-center ${boxClass} question-link ${isActive ? "active" : ""
+            }"
                     style="
                         flex: 1 1 calc(33.33% - 50px); 
                         aspect-ratio: 1 / 1; 
@@ -727,8 +726,8 @@ function navigateToQuestion(questionIndex) {
 // Event listener for question links
 document.querySelectorAll("#uq-num a, #aq-num a").forEach((link, index) => {
     link.addEventListener("click", (e) => {
-        e.preventDefault(); 
-        setActiveState(index); 
+        e.preventDefault();
+        setActiveState(index);
     });
 });
 
@@ -765,7 +764,7 @@ submitButton.onclick = () => {
     let results = []; // Array to store detailed results
 
     // Calculate the score and collect results
-   // Iterate through all questions in the quiz data
+    // Iterate through all questions in the quiz data
     quizData.forEach((questionData, questionIndex) => {
         const selectedOption = userSelections[questionIndex]; // Get the user's selected option
         const isAnswered = selectedOption !== undefined; // Check if the question was answered
@@ -788,7 +787,7 @@ submitButton.onclick = () => {
     });
 
     //data to result.php
-    const data = {score};
+    const data = { score };
     // Send data to the server using fetch
     fetch('results.php', {
         method: 'POST',
@@ -800,7 +799,7 @@ submitButton.onclick = () => {
         .then(response => response.text()) // Handle the response as text
         .then(result => {
             console.log('Response from PHP:', result);
-        //    alert(`Server response: ${result}`);
+            //    alert(`Server response: ${result}`);
         })
         .catch(error => {
             console.error('Error:', error);
@@ -890,8 +889,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Update the timer element
         timerDisplay.textContent = `${hours.toString().padStart(2, "0")}:${minutes
-        .toString()
-        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
     }
 
     // Function to trigger the red color and twinkle effect

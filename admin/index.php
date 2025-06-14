@@ -1,6 +1,11 @@
 <?php
 require_once '../config.php';
 
+// Check if the user is logged in
+require_once "admin_auth_check.php";
+$isLoggedIn = isset($_SESSION['id']);
+
+
 $perPage = 8;
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 if ($page < 1) $page = 1;
@@ -78,19 +83,22 @@ $totalPages = ceil($totalRows / $perPage);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="../style/admin.css">
+    <link rel="stylesheet" href="../main.css" />
+
     <title>User Management</title>
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light  fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.php"><img alt="logo" height="60" src="img/1-removebg-preview.png" /></a>
+            <a class="navbar-brand me-auto me-sm-auto nav-responsive " href="../index.php"><img alt="logo" width="50" src="img/1-removebg-preview.png" /></a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-2"><a class="nav-link" href="adminRole.php"><i class="fa-solid fa-user-tie"></i> Admin</a></li>
+                    <li class="nav-item px-2 active"><a class="nav-link" href="adminRole.php"><i class="fa-solid fa-user-tie"></i> Admin</a></li>
                     <li class="nav-item px-2"><a class="nav-link" href="index.php"><i class="fa-solid fa-user"></i> User</a></li>
                     <li class="nav-item px-2"><a class="nav-link" href="comment.php"><i class="fa-solid fa-comment"></i> Comment</a></li>
                 </ul>
@@ -99,9 +107,9 @@ $totalPages = ceil($totalRows / $perPage);
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <div class="container mt-5">
         <div class="d-flex flex-column align-items-center mb-2 mx-auto">
-    <h3 class="mb-3">User Table</h3>
+    <h3 class="mb-3 mt-5">User Table</h3>
     
     <div class="d-flex mb-3">
         <form class="d-flex" method="GET">
@@ -123,7 +131,8 @@ $totalPages = ceil($totalRows / $perPage);
 </div>
 
         <form method="POST" action="manageUser/deleteSelectedAcc.php" id="bulkDeleteForm">
-            <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered border-dark mb-5 px-5 mx-auto text-center table-hover ">
+                 
                 <thead>
                     <tr>
                         <th class="admin_bg_color text-center"><input type="checkbox" id="selectAll"></th>
@@ -257,15 +266,15 @@ $totalPages = ceil($totalRows / $perPage);
             <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?= ($page <= 1) ? 'disabled' : '' ?>">
-                        <a class="page-link text-secondary" href="?page=<?= $page - 1 ?>">Previous</a>
+                        <a class="page-link text-secondary" href="?page=<?= $page - 1 ?>"><b>Previous</b></a>
                     </li>
                     <?php for ($i = 1; $i <= $totalPages; $i++): ?>
                         <li class="page-item <?= ($i == $page) ? 'active' : '' ?>">
-                            <a class="admin_bg_color page-link outline" href="?page=<?= $i ?>"><?= $i ?></a>
+                            <a class="admin_bg_color page-link active" href="?page=<?= $i ?>"><?= $i ?></a>
                         </li>
                     <?php endfor; ?>
                     <li class="page-item <?= ($page >= $totalPages) ? 'disabled' : '' ?>">
-                        <a class="page-link text-secondary" href="?page=<?= $page + 1 ?>">Next</a>
+                        <a class="page-link text-secondary" href="?page=<?= $page + 1 ?>"><b>Next</b></a>
                     </li>
                 </ul>
             </nav>
@@ -297,6 +306,8 @@ $totalPages = ceil($totalRows / $perPage);
             const checkboxes = document.querySelectorAll("input[name='user_ids[]']");
             checkboxes.forEach(cb => cb.checked = this.checked);
         });
+
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
