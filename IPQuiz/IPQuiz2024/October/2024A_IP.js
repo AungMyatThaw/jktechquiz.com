@@ -313,7 +313,7 @@ const quizData = [
         options: [
             "a) ESSID",
             "b) S/MIME",
-            "c) SSL ",
+            "c) SSL",
             "d) WPA2"],
         answer: "d) WPA2"
     },

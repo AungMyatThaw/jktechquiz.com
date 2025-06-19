@@ -65,6 +65,7 @@ $result = $stmt->get_result(); // Get result
         rel="stylesheet"
         href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style/admin.css">
     <link rel="shortcut icon" href="images/TechQUiz.png" type="image/x-icon">
 </head>
 
